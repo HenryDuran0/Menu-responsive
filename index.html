@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/429099fef3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <figure class="header_fig">
+            <img src="imagenes/pullrequest-logo.svg" alt="">
+        </figure>
+        <div class="menu_icono"><i class="fa-solid fa-bars" id="boton_menu"></i></div>
+    </header>
+
+    <nav class="cont_menu" id="menu">
+        <a href="#">Inicio</a>
+        <a href="#">Empresa</a>
+        <a href="#">Servicios</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Ubicacion</a>
+        <a href="#">Contactanos</a>
+    </nav>
+
+    <section class="cont_principal">
+        <article class="cont_info">
+            <h2><span class="naranja">Creacion de paginas web</span></h2>
+            <h2 class="curso">Curso básico de html y css</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel lacus a urna gravida malesuada. Sed facilisis, ligula vel condimentum semper, turpis sapien pulvinar velit, vel scelerisque nunc diam vel nunc</p>
+            <a href="#">Ver</a>
+        </article>
+
+        <figure class="info_fig">
+             <img src="imagenes/foto_pullrequest.svg" alt="">
+        </figure>
+    </section>
+
+    <footer class="footer">
+        <p>@Loremipsum</p>
+    </footer>
+
+    
+    <!-- Funciones -->
+    <script>
+        $("#boton_menu").click(function() {
+            $("#menu").slideToggle();
+        });
+    </script>
+</body>
+</html>
