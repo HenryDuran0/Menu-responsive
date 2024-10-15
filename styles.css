@@ -29,7 +29,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 150px;
+    max-height: 150px;
 }
 
 .menu_icono {
@@ -44,13 +44,13 @@ body {
 .header_fig {
     /* border: 2px green solid; */
     display: flex;
-    height: 70%;
-    margin-left: 30px;
+    height: 100%;
+    padding: 30px;
 }
 
 .header_fig img {
     width: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .cont_menu {
@@ -126,12 +126,17 @@ body {
         display: flex;
     }
 
-    .cont_menu {
+    #cont_menu  {
         display: none;
+    }
+
+    .cont_menu {
+        /* display: none; */
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
         gap: 10px;
+        border-radius: 0px;
     }
 
     .cont_menu a {
